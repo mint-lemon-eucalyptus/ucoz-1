@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+
+
+</head>
+<body onload="retrieveBooks()">
+
+
+<div class="container-fluid">
+    <hr>
+    <div id="index" class="row-fluid">
+        <div class="span4 r">
+            <fieldset>
+                <div class="control-group">
+                    <label for="author">author</label>
+
+                    <div class="controls">
+                        <input type="text" id="author" placeholder="author of a book" class="input-xlarge">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label for="date">date</label>
+
+                    <div class="controls">
+                        <input type="date" id="date" placeholder="" class="input-xlarge">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label for="title">title</label>
+
+                    <div class="controls">
+                        <input type="text" id="title" placeholder="title of a book" class="input-xlarge">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label for="pages">pages count</label>
+
+                    <div class="controls">
+                        <input type="number" id="pages" placeholder="" class="input-xlarge">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <!-- Button -->
+                    <div class="controls">
+                        <button id='post' class="btn btn-success" onclick="onSaveBtnClick()">save</button>
+                        <button id='clear' class="btn btn-info" onclick="onClearBtnClick()">clear</button>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div class="span7 item-list">
+            <div class="table-responsive">
+                <table id="list-container" class="table table-condensed">
+                    <thead>
+                    <tr>
+                        <th>title</th>
+                        <th>author</th>
+                        <th>date</th>
+                        <th>pages</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/js/lib.js"></script>
+<script type="text/javascript" src="/js/random_data.js"></script>
+<script type="text/javascript" src="/js/app.js"></script>
+
+</body>
+</html>
